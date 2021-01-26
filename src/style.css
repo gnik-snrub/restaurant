@@ -1,0 +1,16 @@
+body {
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-position-y: 15%;
+    background-position-x: center;
+}
+#content {
+    backdrop-filter: blur(6px);
+    background-color: rgba(245, 245, 245, 0.055);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

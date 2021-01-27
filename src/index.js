@@ -29,6 +29,7 @@ function loadPage() {
     homeTab.id = 'home'
     homeTab.textContent = 'Home'
     homeTab.href = '#'
+    homeTab.classList.add('active')
 
     const menuTab = document.createElement('a')
     menuTab.id = 'menu'

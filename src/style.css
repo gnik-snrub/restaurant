@@ -124,8 +124,70 @@ main {
     box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.718);
 }
 
+.content-panel-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .content-panel {
     backdrop-filter: blur(8px);
     background-color: rgba(0, 0, 0, 0.438);
     border: 3px solid #9c6600;
+}
+
+#menu-panel {
+    margin-bottom: 75px;
+    display: grid;
+    grid-template:  "img1 img1 img2 img2"
+                    "img3 img3 img4 img4"
+                    "img5 img5 img6 img6"
+                    ". img7 img7 .";
+    grid-gap: 30px 50px;
+    padding: 30px 75px;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 400px;
+    height: 250px;
+    background-size:cover;
+}
+
+#bacon {
+    background-image: url('./images/menu/bacon.jpg');
+    grid-area: img1;
+}
+
+#cheese {
+    background-image: url('./images/menu/cheese.jpg');
+    grid-area: img2;
+}
+
+#chicken {
+    background-image: url('./images/menu/chicken.jpg');
+    grid-area: img3;
+}
+
+#cute {
+    background-image: url('./images/menu/cute.jpg');
+    grid-area: img4;
+}
+
+#monster {
+    background-image: url('./images/menu/monster.jpg');
+    grid-area: img5;
+}
+
+#steak {
+    background-image: url('./images/menu/steak.jpg');
+    grid-area: img6;
+}
+
+#veggie {
+    background-image: url('./images/menu/veggie.jpg');
+    grid-area: img7;
+    background-position-y: center;
 }

@@ -18,9 +18,36 @@ function menu() {
     message.textContent = "Menu"
     messageWrapper.appendChild(message)
 
+    const menuPanelWrapper = document.createElement('div')
+    menuPanelWrapper.classList.add('content-panel-wrapper')
+    content.appendChild(menuPanelWrapper)
+
     const menuPanel = document.createElement('div')
     menuPanel.classList.add('content-panel')
-    content.appendChild(menuPanel)
+    menuPanel.id = 'menu-panel'
+    menuPanelWrapper.appendChild(menuPanel)
+
+    generateBurgers(menuPanel)
+}
+
+const burgers = [
+    'bacon',
+    'cheese',
+    'chicken',
+    'cute',
+    'monster',
+    'steak',
+    'veggie'
+]
+
+function generateBurgers(parent) {
+    for (let item in burgers) {
+        const burg = document.createElement('div')
+        burg.classList.add('content-panel')
+        burg.classList.add('image')
+        burg.id = `${burgers[item]}`
+        parent.appendChild(burg)
+    }
 }
 
 export {menu}

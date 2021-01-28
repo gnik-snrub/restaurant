@@ -112,7 +112,7 @@ main {
 .page-message-wrapper {
     margin-top: 7%;
     width: 80%;
-    height: 600px;
+    height: 500px;
 }
 
 .page-message {
@@ -154,6 +154,26 @@ main {
     width: 400px;
     height: 250px;
     background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.hover-label {
+    font-family: Nightclubs;
+    color: white;
+    font-size: 3rem;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.image:hover {
+    box-shadow: inset 0 0 500px rgb(0, 0, 0);
+}
+
+.image:hover .hover-label {
+    opacity: 1;
 }
 
 #bacon {

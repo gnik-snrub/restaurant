@@ -46,6 +46,12 @@ function generateBurgers(parent) {
         burg.classList.add('content-panel')
         burg.classList.add('image')
         burg.id = `${burgers[item]}`
+
+        const label = document.createElement('div')
+        label.classList.add('hover-label')
+        label.textContent = `${burgers[item]} burger`
+        burg.appendChild(label)
+
         parent.appendChild(burg)
     }
 }

@@ -1,5 +1,7 @@
 import './style.css';
 import { home } from './modules/home';
+import { menu } from './modules/menu';
+import { contact } from './modules/contact';
 
 function loadPage() {
     const body = document.querySelector('body')
@@ -54,6 +56,7 @@ function loadPage() {
         menuTab.classList.add('active')
         contactTab.classList.remove('active')
         clearContent(content)
+        menu()
     })
 
     contactTab.addEventListener('click', function() {
@@ -61,6 +64,7 @@ function loadPage() {
         menuTab.classList.remove('active')
         contactTab.classList.add('active')
         clearContent(content)
+        contact()
     })
 
     navbar.appendChild(homeTab)
